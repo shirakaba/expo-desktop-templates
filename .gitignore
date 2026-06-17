@@ -1,0 +1,8 @@
+.DS_Store
+node_modules
+
+# `npm pack` tarballs
+/app/**/*.tgz
+/app/**/package 
+/lib/**/*.tgz
+/lib/**/package

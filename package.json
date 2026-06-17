@@ -1,0 +1,23 @@
+{
+  "name": "expo-desktop-templates-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "prepare": "husky",
+    "lint-staged": "lint-staged",
+    "format": "oxfmt"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "oxfmt": "^0.47.0"
+  },
+  "lint-staged": {
+    "*.{css,html,js,jsx,json,md,toml,ts,tsx}": [
+      "oxfmt"
+    ],
+    "!(pnpm-lock).yaml": [
+      "oxfmt"
+    ]
+  }
+}
